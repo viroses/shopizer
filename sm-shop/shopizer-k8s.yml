@@ -45,7 +45,7 @@ spec:
   maxReplicas: 50
   minReplicas: 2
   scaleTargetRef:
-    apiVersion: extensions/v1
+    apiVersion: apps/v1
     kind: Deployment
     name: shopizer-k8s
-  targetCPUUtilizationPercentage: 1
+  targetCPUUtilizationPercentage: 50
