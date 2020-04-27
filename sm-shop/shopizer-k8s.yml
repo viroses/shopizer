@@ -45,10 +45,10 @@ metadata:
   name: shopizer-k8s
   namespace: default
 spec:
-  maxReplicas: 10
+  maxReplicas: 50
   minReplicas: 2
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
     name: shopizer-k8s
-  targetCPUUtilizationPercentage: 30
+  targetCPUUtilizationPercentage: 50
