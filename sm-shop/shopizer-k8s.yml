@@ -15,7 +15,7 @@ kind: Deployment
 metadata:
   name: shopizer-k8s
 spec:
-  replicas: 3
+  replicas: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -34,7 +34,7 @@ spec:
           image: CONTAINER_IMAGE
           resources:
             requests:
-              cpu: 1000m
+              cpu: 1500m
           ports:
             - containerPort: 8080
 ---
