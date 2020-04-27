@@ -45,7 +45,7 @@ metadata:
   name: shopizer-k8s
   namespace: default
 spec:
-  maxReplicas: 50
+  maxReplicas: 15
   minReplicas: 2
   scaleTargetRef:
     apiVersion: apps/v1
