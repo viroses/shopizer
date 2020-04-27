@@ -34,7 +34,7 @@ spec:
           image: CONTAINER_IMAGE
           resources:
             requests:
-              cpu: 1500m
+              cpu: 500m
           ports:
             - containerPort: 8080
 ---
@@ -51,4 +51,4 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: shopizer-k8s
-  targetCPUUtilizationPercentage: 50
+  targetCPUUtilizationPercentage: 30
