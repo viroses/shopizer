@@ -1,10 +1,11 @@
 # Hello!
 You can set your database information below file. Basically it uses H2.
    - /sm-shop/src/main/resources/database.properties
-   
-If you set MySQL endpoint to mysql-master.custom-db.com, it will automatically generate all schema and some test data.
-This project does not devide write and read endpoints for Database.
 
+You can choose if the application will generate the test data or not with the below value.
+   - /sm-shop/src/main/resources/shopizer-properties.properties#L10
+
+This project does not devide write and read endpoints for Database.
 
 
 Shopizer (for java 1.8 +)
